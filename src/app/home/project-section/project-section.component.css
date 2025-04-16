@@ -1,0 +1,75 @@
+#header-container {
+  width: min(80%, 1400px);
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1200px) {
+  #header-container {
+    width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  #header-container {
+    margin-top: 20px;
+  }
+}
+
+#project-big-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--color-background2);
+  padding: 50px 0;
+  overflow: hidden;
+}
+#project-big-wrapper #project-big-container {
+  width: min(90%, 1600px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1400px) {
+  #project-big-wrapper #project-big-container {
+    width: 96%;
+  }
+}
+@media (max-width: 1200px) {
+  #project-big-wrapper #project-big-container {
+    width: 99%;
+  }
+}
+
+#project-small-container {
+  max-width: 86vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 0 15px 15px 15px;
+  position: relative;
+}
+#project-small-container app-project-small {
+  width: 400px;
+  flex-shrink: 0;
+}
+@media (max-width: 1700px) and (min-width: 800px) {
+  #project-small-container {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  #project-small-container app-project-small {
+    width: 350px;
+  }
+}
+@media (max-width: 800px) {
+  #project-small-container {
+    max-width: 96vw;
+  }
+  #project-small-container app-project-small {
+    width: 350px;
+  }
+}/*# sourceMappingURL=project-section.component.css.map */

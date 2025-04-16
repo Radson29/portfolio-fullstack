@@ -1,0 +1,58 @@
+<div id="container">
+    <div id="left-panel" data-aos="fade-up">
+        <div id="photo-wrapper">
+            <img src="/img/photo.jpg" />
+        </div>
+    </div>
+    <div id="right-panel" data-aos="fade-up">
+        <app-section-header [title]="'Profil'" />
+        <div id="description">
+            Specjalizuję się w językach Java (Spring Boot) i Angular, z doświadczeniem w tworzeniu aplikacji webowych i desktopowych. 
+            Jestem inżynierem Informatyki i za niedługo również magistrem na Uniwersytecie Rzeszowskim. 
+            Skupiam się na budowie REST API, zarządzaniu bazami danych (PostgreSQL), 
+            integracji z zewnętrznymi API oraz implementacji dynamicznych i responsywnych interfejsów użytkownika. 
+            Pasjonuję się również cyberbezpieczeństwem i nie są mi obce języki programowania takie jak Python (AI). 
+            Dobrze odnajduję się także w dziedzinach związanych z sieciami komputerowymi i znam nowoczesne narzędzia usprawniające pracę ,
+            takie jak Docker, Jenkins czy GitLab.
+            <br><br>
+            Jestem zmotywowany do ciągłego rozwijania swoich umiejętności
+            technicznych oraz pracy zespołowej, przyczyniając się do realizacji
+            projektów dostarczających realną wartość użytkownikom.
+
+        </div>
+        <div id="information-container">
+            <div class="info">
+                <div class="line1">Radosław Kaczka</div>
+                <div class="line2">Imię i nazwisko</div>
+            </div>
+            <div class="info">
+                <div class="line1">Rzeszów / Zdalnie</div>
+                <div class="line2">Lokalizacja</div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="down-panel">
+        <div class="button" data-aos="fade-up" (click)="openSelectCVPopup()">
+            CV
+        </div>
+        <a href="https://github.com/Radson29" target="_blank" data-aos="fade-up" data-aos-delay="50">
+            <div class="button">
+                GitHub
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/radoslaw-kaczka/" target="_blank" data-aos="fade-up" data-aos-delay="100">
+            <div class="button">
+                LinkedIn
+            </div>
+        </a>
+
+        <div class="button" id="projects" (click)="scrollTo('project-section')" data-aos="fade-up" data-aos-delay="150">
+            Projekty
+        </div>
+        <div class="button" id="contact" (click)="scrollTo('contact-section')" data-aos="fade-up" data-aos-delay="200">
+            Kontakt
+        </div>
+    </div>
+</div>

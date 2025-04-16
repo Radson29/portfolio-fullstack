@@ -1,0 +1,57 @@
+<div id="mobile-header">
+    <div (click)="toggleMenu()" id="menu-button" [ngClass]="{'active': isActive}">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>
+
+
+
+
+<div id="background-button" [ngClass]="{'active': isActive}" (click)="toggleMenu()"></div>
+<div id="wrapper" [ngClass]="{'active': isActive}">
+    
+    <div id="container">
+       <!-- Logo z linkiem do strony głównej -->
+    <a id="logo" href="/">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+        <div id="content">
+            
+            <nav>
+                <ul>
+                    <a href="https://github.com/Radson29" target="_blank">
+                        <li class="button"><i class="icon fa-brands fa-github"></i><span class="text">GitHub</span>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/radoslaw-kaczka/" target="_blank">
+                        <li class="button"><i class="icon fa-brands fa-linkedin"></i><span class="text">LinkedIn</span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li class="button" (click)="scrollTo('profile-section')"><i class="icon fa-solid fa-user"></i><span
+                            class="text">Profil</span>
+                    </li>
+                    <li class="button" (click)="scrollTo('stack-section')"><i
+                            class="icon fa-solid fa-computer"></i><span class="text">Umiejętności</span>
+                    </li>
+                    <li class="button" (click)="scrollTo('project-section')"><i
+                            class="icon fa-solid fa-briefcase"></i><span class="text">Projekty</span>
+                    </li>
+                    <li class="button" (click)="scrollTo('contact-section')"><i
+                            class="icon fa-solid fa-envelope"></i><span class="text">Kontakt</span>
+                    </li>
+                    <li class="button" (click)="openSelectCVPopup()"><i class="icon fa-solid fa-scroll"></i><span
+                            class="text">CV</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+#container {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#container #text-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: max(3vw, 1.2rem);
+  text-align: center;
+  padding: min(8vw, 50px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border: 2px solid white;
+  text-wrap: nowrap;
+}
+#container #text-container #line2 {
+  font-size: 0.8em;
+  margin-top: -5%;
+  font-weight: 600;
+}
+#container #hero-img {
+  min-height: 300px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 0.4;
+}/*# sourceMappingURL=hero.component.css.map */

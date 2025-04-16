@@ -1,0 +1,41 @@
+<div id="container">
+    <a [href]="live" target="_blank">
+        <div id="preview">
+            <img [src]="'/img/'+imgSrc" />
+        </div>
+    </a>
+    <div id="information">
+        <div id="header">
+            <div id="project-info">
+                <div id="type" [ngClass]="{'red': duringDevelop}">{{type}}</div>
+                <div id="name">{{name}}</div>
+            </div>
+            <div id="button-container">
+                @if (github.length == 1) {
+                <a [href]="github[0].link" target="_blank">
+                    <div class="button">GitHub
+                    </div>
+                </a>
+                }
+                @else if (github.length > 1) {
+                <div class="button">GitHub
+                    <ul>
+                        <a [href]="link.link" target="_blank" *ngFor="let link of github">
+                            <li>{{link.name}}</li>
+                        </a>
+
+                    </ul>
+                </div>
+                }
+                @if (live) {
+                <a [href]="live" target="_blank">
+                    <div class="button">Live</div>
+                </a>
+                }
+            </div>
+        </div>
+        <div id="description">
+            {{description}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div id="header-container">
+    <app-section-header [title]="'Projekty'"
+        [description]="'W mojej karierze zrealizowałem wiele projektów o różnym stopniu skomplikowania - od mniejszych aplikacji po zaawansowane systemy. Poniżej przedstawiam przykłady realizacji, które najlepiej pokazują moje umiejętności i doświadczenie.'" />
+</div>
+
+<div id="project-big-wrapper">
+    <div id="project-big-container">
+        <app-project-math />
+    </div>
+    <div id="project-big-container">
+        <app-medisync/>
+    </div>
+    <div id="project-big-container">
+        <app-project-car-dealership />
+    </div>
+</div>
+
+
+
+<div id="project-small-container">
+    <app-project-small data-aos="fade-right" data-aos-delay="100" [imgSrc]="'leaf-main.png'"
+        [name]="'Klasyfikacja chorób roślin'" [type]="'Python project'" [description]="'Ten projekt koncentruje się na klasyfikowaniu chorób roślin na podstawie obrazów liści przy użyciu Transfer Learning z modelem ResNet50 . Podejście to wykorzystuje podzbiór publicznie dostępnego zestawu danych PlantVillage.
+        '" [github]="[{
+         name: '', link: 'https://github.com/Radson29/Classification-Plantvillage-ResNet50'}]" />
+
+    <app-project-small data-aos="fade-right" data-aos-delay="200" [imgSrc]="'system_bank.png'"
+        [name]="'System bankowy C++'" [type]="'Console application C++'"
+        [description]="'System bankowy (konsolowy) wspierający wielu użytkowników oraz operacje finansowe. Aplikacja umożliwia zarządzanie kontami bankowymi, czekami, zadaniami pracowników oraz logowaniem i rejestracją użytkowników.'" [github]="[{
+            name: '', link: 'https://github.com/Radson29/system_bankowy'
+        }]" />
+
+</div>
+

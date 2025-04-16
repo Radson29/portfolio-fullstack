@@ -1,0 +1,27 @@
+<div id="container-wrapper">
+    <div id="container">
+        <app-section-header [title]="'Kontakt'" [colorStyle]="'background2'"
+            [description]="'Jeśli jesteś zainteresowany współpracą lub masz dodatkowe pytania, zapraszam do kontaktu. Odpowiem najszybciej, jak to możliwe!'" />
+
+        <div id="content">
+            <a href="www.linkedin.com/in/radoslaw-kaczka/" target="_blank" data-aos="fade-right">
+                <div class="item" id="linkedin">
+                    <div class="icon"><img src="/icon/icons8-linkedin.svg"></div>
+                    <div class="text">LinkedIn</div>
+                    <div class="value">Radosław Kaczka</div>
+                </div>
+            </a>
+            <div class="item copyable" id="discord" (click)="clipboard.copyToClipboard('radson29')" data-aos="fade-left">
+                <div class="icon"><img src="/icon/discord-icon-svgrepo-com.svg"></div>
+                <div class="text">Discord</div>
+                <div class="value">radson29</div>
+            </div>
+            <div class="item copyable" id="email" (click)="clipboard.copyToClipboard('radek.kaczka1@gmail.com')"
+                data-aos="fade-up">
+                <div class="icon"><img src="/icon/email-mail-web-svgrepo-com.svg"></div>
+                <div class="text">E-mail</div>
+                <div class="value">radek.kaczka1&#64;gmail.com</div>
+            </div>
+        </div>
+    </div>
+</div>

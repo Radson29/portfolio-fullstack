@@ -1,0 +1,174 @@
+#container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+#container #preview {
+  flex-shrink: 0;
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid var(--color-theme);
+}
+#container #preview img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.9s ease;
+}
+#container #information {
+  background-color: var(--color-background);
+  flex-grow: 1;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  border-top: 2px solid var(--color-background3);
+  border-bottom: 2px solid var(--color-background3);
+  border-right: 2px solid var(--color-background3);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#container #information #header {
+  text-align: right;
+}
+#container #information #header .type {
+  color: var(--color-theme);
+  font-size: 0.8rem;
+}
+#container #information #header .name {
+  font-size: 1.6rem;
+  margin-top: -10px;
+}
+#container #information #description {
+  text-align: justify;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+#container #information #footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#container #information #footer #stack-section {
+  margin-top: 10px;
+}
+#container #information #footer #stack-section .title {
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--color-text-light);
+}
+#container #information #footer #stack-section #stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#container #information #footer #stack-section #stack-container .stack {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+#container #information #footer #stack-section #stack-container .stack img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container #information #footer #stack-section #stack-container .stack:hover {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  #container #information #footer #stack-section #stack-container .stack {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 800px) {
+  #container #information #footer #stack-section {
+    margin-top: 5px;
+  }
+}
+#container #information #footer #button-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+#container #information #footer #button-container .button {
+  color: var(--color-text-light);
+  padding: 4px 10px;
+  border: 1px solid var(--color-text);
+  border-radius: 8px;
+  position: relative;
+}
+#container #information #footer #button-container .button ul {
+  display: none;
+  position: absolute;
+  left: -1px;
+  z-index: 10;
+  background-color: var(--color-background);
+  padding: 4px 10px;
+  border: 1px solid var(--color-text);
+  border-radius: 0 8px 8px 8px;
+  list-style: none;
+}
+#container #information #footer #button-container .button ul li {
+  padding: 10px;
+}
+#container #information #footer #button-container .button:hover {
+  cursor: pointer;
+  color: var(--color-text);
+}
+#container #information #footer #button-container .button:hover ul {
+  display: block;
+}
+#container:hover #preview img {
+  transform: scale(1.1);
+}
+#container.inverted #preview {
+  order: 2;
+}
+#container.inverted #information {
+  order: 1;
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+  border-top: 2px solid var(--color-background3);
+  border-bottom: 2px solid var(--color-background3);
+  border-left: 2px solid var(--color-background3);
+}
+#container.inverted #information #header {
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  #container.inverted #preview {
+    order: 1;
+  }
+  #container.inverted #information {
+    order: 2;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+  }
+  #container.inverted #information #header {
+    text-align: right;
+  }
+}
+@media (max-width: 1200px) {
+  #container {
+    flex-direction: column;
+  }
+  #container #preview {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  #container #information {
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+    border-left: 2px solid var(--color-background3);
+  }
+}/*# sourceMappingURL=project-big.component.css.map */

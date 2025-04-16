@@ -1,0 +1,49 @@
+:root {
+    --color-background: #372e29;
+    --color-background2: #726255;
+    --color-background3: #000000;
+
+    --color-theme: #ecb939;
+    --color-theme-accent: #f0c75e;
+
+    --color-text: white;
+    --color-text-light: rgba(236, 234, 234, 0.969);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: "Poppins", serif;
+    min-width: 360px;
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scrollbar-color: var(--color-theme) #726255;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #726255;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-theme);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-theme-accent);
+}

@@ -1,0 +1,14 @@
+#container {
+   
+    background-color: var(--color-background);
+    text-align: center;
+    padding: 20px;
+
+    a {
+        color: var(--color-theme);
+
+        &:hover {
+            color: var(--color-theme-accent);
+        }
+    }
+}
