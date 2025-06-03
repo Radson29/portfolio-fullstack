@@ -4,4 +4,5 @@ To repozytorium zawiera kod mojego portfolio – strony internetowej stworzonej 
 
 Stack: Angular 19
 <br><br>
-Live: radoslaw-kaczka.pl
+Live: radoslaw-kaczka.pl<br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b518f466-afc2-44c6-b0ed-c97ffeafdf96/deploy-status)](https://app.netlify.com/sites/portfolio-radoslaw-kaczka/deploys)
